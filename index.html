@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meal App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ============NavBar======= -->
+    <nav class="w-full bg-dark  fixed-top">
+        <div class="d-sm-flex justify-content-between">
+            <div class="m-2 text-center d-sm-flex text-sm-start my-sm-auto ">
+                <img width="40px" height="40px" src="./images/logo-removebg-preview.png" alt="...">
+                <a class="d-none d-sm-block text-warning fs-2 fw-bold ms-4" aria-current="page" href="#">CUISINE
+                    QUEST</a>
+            </div>
+            <div class="d-flex  ">
+                <select class="form-select  mx-auto mx-sm-1 mb-3 my-sm-2 myInput  " onclick="onCategoryChange()"
+                    id="Category" aria-label="Default select example">
+                </select>
+                <select class="form-select mx-auto mx-sm-1 mb-3 my-sm-2 myInput " id="recipesSelect" onchange="onSelectMeal()"
+                    aria-label="Default select example">
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========HeroSection(Featured recepies)=============== -->
+    <div class="container-fluid myContainer " id="mainContainer">
+        <h1 class="fs-1 fw-semibold text-warning text-center">Our Featured Recipes</h1>
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-4   " id="heroImage1">
+
+            </div>
+            <div class="col-sm-12 col-md-4   " id="heroImage2">
+
+            </div>
+            <div class="col-sm-12 col-md-4   " id="heroImage3">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========= Meals by category container ======> -->
+    <div class="container-fluid ">
+        <div class="row " id="recepiesCards">
+
+        </div>
+    </div>
+
+    <!-- ========= Single Recepie details ======> -->
+
+    <div class="container ">
+        <div class="row" id="singleRecipe">
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
